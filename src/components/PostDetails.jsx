@@ -1,22 +1,10 @@
 import { Link } from "react-router-dom";
 import styles from "./PostDetails.module.css";
-import { useAuthentication } from "../hooks/useAuthentication";
-import { useState, useEffect } from "react";
-import { onAuthStateChanged } from 'firebase/auth';
+import { useAuthValue } from "../context/AuthContext";
 
 const PostDetail = ({ post }) => {
-
-  const [user, setUser] = useState(undefined)
-  const {auth} = useAuthentication()
-
-  useEffect(() => {
-
-    onAuthStateChanged(auth, (user) => {
-      setUser(user)
-    })
-
-  }, [auth])
-
+  const {user} = useAuthValue()
+  
   return (
     <div className={styles.post_detail}>
       <img src={post.image} alt={post.title} />

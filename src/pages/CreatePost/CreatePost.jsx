@@ -85,6 +85,8 @@ const CreatePost = () => {
             value={image}
           />
         </label>
+        <p className={styles.preview_title}>Preview da imagem atual:</p>
+            <img className={styles.image_preview} src={image} alt={title} />
         <label>
           <span>Conteúdo:</span>
           <textarea
