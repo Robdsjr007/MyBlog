@@ -1,7 +1,16 @@
-.register {
+  .register {
     text-align: center;
   }
-  
+
   .register p {
     color: #aaa;
+  }
+
+
+  @media (max-width: 600px) {
+    .register {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }

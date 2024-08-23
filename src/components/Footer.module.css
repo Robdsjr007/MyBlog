@@ -6,3 +6,14 @@
     justify-content: center;
     background-color: #edf3f6;
 }
+
+@media (max-width: 600px) {
+    .footer {
+        max-width: 100vw;
+    }
+
+    .footer h3 {
+        text-align: center;
+        max-width: 80vw;
+    }
+}

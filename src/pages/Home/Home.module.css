@@ -29,3 +29,11 @@
 .noposts a {
     padding: 10px 25px;
 }
+
+
+@media (max-width: 600px) {
+    .home h1 {
+        font-size: 1rem;
+        text-align: center;
+    }
+}
