@@ -123,6 +123,6 @@ There are several routes to navigate to different pages of the app:
 
 \[list here the url where your environments live\]
 
-The `master` branch deploys to http://my-app.com.
+The `master` branch deploys to https://my-blog-seven-green.vercel.app/.
 
 ---
